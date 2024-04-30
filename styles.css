@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #371f2f;
+  height: 100vh;
+}
+h1 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  padding: 2rem;
+}
+.container {
+  margin-top: 5%;
+}
+.center {
+  text-align: center;
+  margin-top: 40px;
+}
+input {
+  font-size: 31px;
+  width: 30%;
+  height: 5rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+::placeholder {
+  text-align: center;
+  font-size: large;
+}
+button {
+  width: 15%;
+  height: 5rem;
+  color: #371f2f;
+  font-weight: bold;
+  font-size: 31px;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  &:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+}
+#output {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  input {
+    width: 50%;
+  }
+  button {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    width: 50%;
+  }
+  ::placeholder {
+    font-size: 11px;
+  }
+  button {
+    width: 35%;
+    font-size: 24px;
+  }
+  #output {
+    font-size: 40px;
+  }
+}
